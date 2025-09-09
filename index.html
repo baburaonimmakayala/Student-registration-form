@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+  <header class="form-header">
+    <img src="undraw_online-calendar_zaoc.svg" alt="logo" class="logo" />
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <main>
+    <div class="form-card">
+      <form id="registration-form">
+        <h3>Candidate Details</h3>
+        <label for="prefix">Name</label>
+        <div class="flex">
+          <select id="prefix" name="prefix">
+            <option value="mr">Mr.</option>
+            <option value="miss">Miss.</option>
+            <option value="mrs">Mrs.</option>
+          </select>
+          <input type="text" id="first-name" name="first_name" placeholder="First Name" required />
+          <input type="text" id="last-name" name="last_name" placeholder="Last Name" required />
+        </div>
+
+        <label>Gender:</label>
+        <div class="radio-row">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </div>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"/>
+
+
+
+
+        <h3>Contact Info</h3>
+        <label for="mobile">Mobile Numbers</label>
+        <div class="flex">
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number" />
+          <input type="tel" id="alt-mobile" name="alt_mobile" placeholder="Alternate Number" />
+        </div>
+
+        <label for="mail">E-Mail</label>
+        <input type="email" id="mail" name="mail" placeholder="Enter Email" />
+
+        <h3>Address</h3>
+        <label for="cities">Select Location</label>
+        <select id="cities" name="cities">
+          <option value="">--Choose Location--</option>
+          <option value="samalkot">Samalkot</option>
+          <option value="korumilli">Korumilli</option>
+          <option value="kakinada">Kakinada</option>
+          <option value="peddapuram">Peddapuram</option>
+        </select>
+
+        <div class="flex">
+          <input type="text" id="address1" name="address1" placeholder="Address 1" />
+          <input type="text" id="address2" name="address2" placeholder="Address 2" />
+        </div>
+
+        <h3>Courses</h3>
+        <label>Skills:</label>
+        <div class="checkbox-row">
+          <label><input type="checkbox" name="skill" value="Python" /> Python</label>
+          <label><input type="checkbox" name="skill" value="Java" /> Java</label>
+          <label><input type="checkbox" name="skill" value="C++" /> C++</label>
+        </div>
+
+        <label>Select a Domain:</label>
+        <div class="checkbox-row">
+          <label><input type="checkbox" name="domain" value="Flutter" /> Flutter</label>
+          <label><input type="checkbox" name="domain" value="Machine Learning" /> Machine Learning</label>
+          <label><input type="checkbox" name="domain" value="Web Designing" /> Web Designing</label>
+          <label><input type="checkbox" name="domain" value="IOT" /> IOT</label>
+        </div>
+
+        <div class="upload">
+        <h3>Documents</h3>
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume" />
+        <br>
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" name="photo" />
+        </div>
+
+        <label for="message">Feedback</label>
+        <br>
+        <textarea id="message" name="message" placeholder="Enter your feedback..." rows="5" cols="50"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+      <div class="footer-wrapper">
+         <div class="copyright">
+            Designed <span>Phani Ram Nimmakayala</span>
+         </div>
+      </div>
+     </footer>
+</body>
+</html>
